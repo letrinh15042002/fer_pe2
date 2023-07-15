@@ -46,7 +46,7 @@ const Home = (props) => {
 
   const home = props.items.map((item) => {
     return (
-      <div className="col-12 col-sm-6 col-md-3" key={item.id}>
+      <div className="col-12 col-md-6 col-lg-3" key={item.id}>
         <RenderMenuItem item={item}
         />
       </div>
