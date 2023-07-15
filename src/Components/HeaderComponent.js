@@ -65,52 +65,14 @@ class Header extends Component {
                                 <NavItem>
                                     <NavLink className="nav-link header-navlink-item " to='/contactus'>CONTACT</NavLink>
                                 </NavItem>
-
-
-
-
-
-
                             </Nav>
-                            {/* <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
 
-                                <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
-                                <ModalBody>
-                                    <Form onSubmit={this.handleLogin}>
-                                        <FormGroup>
-                                            <Label htmlFor="username">Username</Label>
-                                            <Input type="text" id="username" name="username"
-                                                innerRef={(input) => this.username = input} />
-                                        </FormGroup>
-                                        <FormGroup>
-                                            <Label htmlFor="password">Password</Label>
-                                            <Input type="password" id="password" name="password"
-                                                innerRef={(input) => this.password = input} />
-                                        </FormGroup>
-                                        <FormGroup check>
-                                            <Label check>
-                                                <Input type="checkbox" name="remember"
-                                                    innerRef={(input) => this.remember = input} />
-                                                Remember me
-                                            </Label>
-                                        </FormGroup>
-                                        <Button type="submit" value="submit" color="primary">Login</Button>
-                                    </Form>
-
-                                </ModalBody>
-                            </Modal>
-
-                            <Nav className="ml-auto" navbar>
-                                <NavItem>
-                                    <Button outline onClick={this.toggleModal}><span className="fa fa-sign-in fa-lg"></span> Login</Button>
-                                </NavItem>
-                            </Nav> */}
                             <Nav className="ml-auto mt-4" navbar>
                                 <NavItem>
                                     <Form>
                                         <FormGroup style={{ display: 'flex', backgroundColor: 'white', border: '1px solid #333' }}>
                                             <Button type="submit" value="submit" style={{ backgroundColor: 'white', border: 'none' }}><i class="fa fa-search" style={{ color: 'black' }} aria-hidden="true"></i></Button>
-                                            <Input type="email" style={{ backgroundColor: 'white', border: 'none' }} name="email" id="exampleEmail" placeholder="Search" />
+                                            <Input className='hidden-on-moble d-lg-block ' type="email" style={{ backgroundColor: 'white', border: 'none' }} name="email" id="exampleEmail" placeholder="Search" />
                                         </FormGroup>
                                     </Form>
                                 </NavItem>

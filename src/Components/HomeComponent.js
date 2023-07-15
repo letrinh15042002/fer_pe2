@@ -1,9 +1,17 @@
-import {
-  Card, CardImg, CardImgOverlay, CardBody, CardSubtitle, CardText,
-  CardTitle, Breadcrumb, BreadcrumbItem
-} from 'reactstrap';
+// import {
+//   Card, CardImg, CardImgOverlay, CardBody, CardSubtitle, CardText,
+//   CardTitle, Breadcrumb, BreadcrumbItem
+// } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+// import React from 'react';
+import React, { Component } from 'react';
+// import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Label, Input, Col, Row, FormFeedback } from 'reactstrap';
+import {
+  Breadcrumb, BreadcrumbItem,
+  Button, Row, Col, Label
+} from 'reactstrap';
+import { Control, LocalForm, Errors } from 'react-redux-form';
 
 
 
@@ -12,7 +20,7 @@ function RenderMenuItem({ item, onClick }) {
 
     <div class="home-item">
 
-      <img class="home-item__img" alt={item.name} src={item.img} />
+      <img class="home-item__img" alt={item.name} src={item.image} />
       <div style={{ padding: '0 20px' }}>
         <h4 class="home-item__name">{item.name} </h4>
         <h6 class="home-item__description">
@@ -49,7 +57,7 @@ const Home = (props) => {
     <div style={{ backgroundColor: '#db545a' }}>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 ">
             <h3 className="text-center text-white p-5 p-7">Join now for just $50/month</h3>
             {/* <hr /> */}
           </div>
@@ -58,6 +66,7 @@ const Home = (props) => {
           {home}
         </div>
       </div>
+
     </div>
 
   );

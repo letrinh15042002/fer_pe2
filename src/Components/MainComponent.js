@@ -6,7 +6,7 @@ import Footer from './FooterComponent';
 import { addComment } from '../redux/ActionCreators';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-
+import Contact from './ContactComponent';
 
 const mapStateToProps = state => {
   return {
@@ -61,6 +61,8 @@ class Main extends Component {
           <Switch>
             <Route exact path='/home' component={() => <Home items={this.props.items} />} />
             <Route path='/home/:itemid' component={ItemWithId} />
+            <Route path='/contactus' component={ItemWithId} />
+            <Route exact path='/contactus' component={Contact} />
 
             <Redirect to="/home" />
           </Switch>
